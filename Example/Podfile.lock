@@ -1,0 +1,16 @@
+PODS:
+  - TestTabBarLibrary (0.1.0)
+
+DEPENDENCIES:
+  - TestTabBarLibrary (from `../`)
+
+EXTERNAL SOURCES:
+  TestTabBarLibrary:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  TestTabBarLibrary: 557eb9b2d1283badc200b877f0e7a26bc30086b4
+
+PODFILE CHECKSUM: ff5a7f761c0ad3d7ea63e6c1bd65433914bfc185
+
+COCOAPODS: 1.6.0

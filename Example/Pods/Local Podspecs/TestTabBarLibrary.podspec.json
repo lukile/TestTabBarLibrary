@@ -1,0 +1,22 @@
+{
+  "name": "TestTabBarLibrary",
+  "version": "0.1.0",
+  "summary": "A short description of TestTabBarLibrary.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/lukile/TestTabBarLibrary",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "lukile": "lucile.1988.ls@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/lukile/TestTabBarLibrary.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "TestTabBarLibrary/Classes/**/*"
+}
