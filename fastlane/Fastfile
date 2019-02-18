@@ -18,6 +18,12 @@ default_platform(:ios)
 platform :ios do
   desc "Description of what the lane does"
   lane :release do
-    pod_push(path: 'TestTabBarLibrary.podspec')
+
+  	slack(
+  		message: "MESSAGE TEST ",
+  		slack_url: "https://hooks.slack.com/services/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"
+  	)
+
+
   end
 end
