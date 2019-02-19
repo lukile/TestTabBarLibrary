@@ -13,6 +13,7 @@
 		FD0BBA7B221A165F002DF3CD /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0BBA7A221A165F002DF3CD /* TabBar.swift */; };
 		FD0BBA7E221A179A002DF3CD /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD0BBA7D221A179A002DF3CD /* SnapKit.framework */; };
 		FD0BBA80221A180C002DF3CD /* Position.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0BBA7F221A180C002DF3CD /* Position.swift */; };
+		FD52CC54221A95E20085B46E /* TestTabBar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD0BBA60221A1649002DF3CD /* TestTabBar.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD52CC54221A95E20085B46E /* TestTabBar.framework in Frameworks */,
 				FD0BBA7E221A179A002DF3CD /* SnapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
