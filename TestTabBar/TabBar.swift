@@ -437,23 +437,6 @@ public class TabBar : UIView {
         } else {
             print("SELECTED")
         }
-        
-        
-        
-        /*
-         UIView.animate(withDuration: 1.0, animations: {
-         
-         print("HEllo !!!")
-         btn.frame = CGRect(x: bounds.origin.x, y: bounds.origin.y, width: 10, height: 10)
-         }){(success: Bool)in
-         if(success){
-         print("SUCCESS !!!")
-         //btn.frame = bounds
-         }
-         
-         
-         }
-         */
     }
 }
 
