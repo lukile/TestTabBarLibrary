@@ -18,9 +18,26 @@ default_platform(:ios)
 platform :ios do
   desc "Description of what the lane does"
   lane :release do
+    github_release = set_github_release(
+      repository_name: "fastlane/fastlane",
+      api_token: "b74618aac6ba32e383061e7462d4fe06c612cc23",
+      name: "Release" + get_version_number,
+      tag_name: "v1.22.0",
+      description: (File.read("changelog") rescue "No changelog provided"),
+      commitish: "master",
+      upload_assets: ["example_integration.ipa", "./pkg/built.gem"]
+    )
 
+    version_bump_podspec(path: "TestTabBarLibrary.podspec", bump_type: "patch")
+    increment_version_number(
+      bump_type: "patch" # Automatically increment patch version number
+    )
+    increment_version_number_in_plist(bump_type: "patch")
 
-    pod_push(path: 'TestTabBarLibrary.podspec')
+    add_git_tag(
+      tag: get_version_number(xcodeproj: "TestTabBar.xcodeproj")
+    )
+    pod_push(path: "TestTabBarLibrary.podspec")
 
   	slack(
   		message: "MESSAGE TEST ",
