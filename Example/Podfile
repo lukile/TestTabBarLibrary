@@ -1,6 +1,0 @@
-use_frameworks!
-target 'TestTabBarLibrary_Tests' do
-  pod 'TestTabBarLibrary', :path => '../'
-  
-  
-end

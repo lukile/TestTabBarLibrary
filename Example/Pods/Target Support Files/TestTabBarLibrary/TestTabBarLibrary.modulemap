@@ -1,6 +1,0 @@
-framework module TestTabBarLibrary {
-  umbrella header "TestTabBarLibrary-umbrella.h"
-
-  export *
-  module * { export * }
-}
