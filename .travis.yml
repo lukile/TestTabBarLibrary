@@ -3,6 +3,7 @@ language: objective-c
 branches:
   only:
     - master
+    - develop
 notifications:
   email: false
 before_install:
@@ -11,4 +12,4 @@ before_install:
   - npm install bumped -g
 before_script:
   - bumped release patch
-script: bundle exec fastline release
+script: bundle exec fastline build

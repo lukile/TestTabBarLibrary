@@ -17,10 +17,29 @@ default_platform(:ios)
 
 platform :ios do
   desc "Description of what the lane does"
-  lane :release do
+
+  lane :build do
+    case git_branch
+    when "develop"
+      develop
+    when "master"
+      master
+    end
+  end
+
+  lane :develop do
+
+    slack(
+  		message: "MESSAGE TEST ",
+  		slack_url: "https://hooks.slack.com/services/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"
+  	)
+
+  end
+
+  lane :master do
     set_github_release(
       repository_name: "lukile/TestTabBarLibrary",
-      api_token: "9bc99af338624c0adab0849738b75bde899ca330",
+      api_token: "2c2f9557490c5ee1927ba550b819a2bfb2b8e3ce",
       name: "Release " + get_version_number,
       tag_name: last_git_tag,
       is_prerelease: true,
@@ -29,19 +48,10 @@ platform :ios do
     )
 
     version_bump_podspec(path: "TestTabBarLibrary.podspec", bump_type: "patch")
-    increment_version_number(
-      bump_type: "patch" # Automatically increment patch version number
-    )
-    
-    add_git_tag(
-      tag: get_version_number(xcodeproj: "TestTabBar.xcodeproj")
-    )
+
     pod_push(path: "TestTabBarLibrary.podspec")
 
-  	slack(
-  		message: "MESSAGE TEST ",
-  		slack_url: "https://hooks.slack.com/services/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"
-  	)
+
 
   end
 end
