@@ -30,7 +30,7 @@ platform :ios do
   lane :develop do
 
     slack(
-  		message: "MESSAGE TEST ",
+  		message: "MESSAGE TEST " + get_version_number,
   		slack_url: "https://hooks.slack.com/services/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"
   	)
 
