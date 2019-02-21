@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FD0BBA6A221A1649002DF3CD /* TestTabBar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD0BBA60221A1649002DF3CD /* TestTabBar.framework */; };
 		FD0BBA6F221A1649002DF3CD /* TestTabBarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0BBA6E221A1649002DF3CD /* TestTabBarTests.swift */; };
 		FD0BBA71221A1649002DF3CD /* TestTabBar.h in Headers */ = {isa = PBXBuildFile; fileRef = FD0BBA63221A1649002DF3CD /* TestTabBar.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FD0BBA7B221A165F002DF3CD /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0BBA7A221A165F002DF3CD /* TabBar.swift */; };
@@ -50,7 +49,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FD0BBA6A221A1649002DF3CD /* TestTabBar.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
