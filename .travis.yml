@@ -7,5 +7,9 @@ notifications:
   email: false
 before_install:
   - gem install bundler
+  - gem install fastlane -NV
   - bundle install
-script: bundle exec fastlane release
+  - npm install bumped -g
+before_script:
+  - bumped release patch
+script: bundle exec fastline release
