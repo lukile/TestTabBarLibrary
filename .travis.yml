@@ -8,4 +8,7 @@ notifications:
 before_install:
   - gem install bundler
   - bundle install
-script: bundle exec fastlane release
+  - npm install bumped -g
+before_script:
+  - bumped release patch
+script: bundle exec fastline release
