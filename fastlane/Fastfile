@@ -3,12 +3,24 @@ default_platform(:ios)
 platform :ios do
   desc "Description of what the lane does"
   lane :release do
-
-    pod_push(path: 'TestTabBarLibrary.podspec')
+    pod_push(path: 'TestTabBar.podspec')
 
   	slack(
-  		message: "MESSAGE TEST ",
+  		message: "MESSAGE TEST ",
   		slack_url: "https://hooks.slack.com/services/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"
   	)
+  end
+  lane :devices do
+    #scan(workspace: 'TestTabBar.xcodeproj/project.xcworkspace')
+    run_tests(
+      scheme: "TestTabBar",
+      devices: ["iPhone XR", "iPhone XS"],
+      clean: true,
+    )
+		slack(
+			message: "Test devices",
+			slack_url: "https://hooks.slack.com/services/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",
+			channel: "#devices"
+		)
   end
 end
