@@ -5,22 +5,64 @@
     
     
       
+<<<<<<< HEAD
       <testcase classname="fastlane.lanes" name="0: default_platform" time="0.008456">
+=======
+      <testcase classname="fastlane.lanes" name="0: default_platform" time="0.007191">
         
       </testcase>
     
       
+      <testcase classname="fastlane.lanes" name="1: backup_file" time="0.010697">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="2: Switch to ios changePlaceFile lane" time="0.002252">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="3: backup_file" time="0.002194">
+>>>>>>> 95c0f49c3bca9ff0630bcf54450db2ee28a5ea8e
+        
+      </testcase>
+    
+      
+<<<<<<< HEAD
       <testcase classname="fastlane.lanes" name="1: git_branch" time="0.018439">
+=======
+      <testcase classname="fastlane.lanes" name="4: Switch to ios changePlaceFile lane" time="0.001159">
         
       </testcase>
     
       
+      <testcase classname="fastlane.lanes" name="5: backup_file" time="0.002285">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="6: Switch to ios changePlaceFile lane" time="0.001754">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="7: Switch to ios messageSlack lane" time="0.001826">
+>>>>>>> 95c0f49c3bca9ff0630bcf54450db2ee28a5ea8e
+        
+      </testcase>
+    
+      
+<<<<<<< HEAD
       <testcase classname="fastlane.lanes" name="2: Switch to ios develop lane" time="0.002848">
         
       </testcase>
     
       
       <testcase classname="fastlane.lanes" name="3: slack" time="0.601641">
+=======
+      <testcase classname="fastlane.lanes" name="8: slack" time="0.367378">
+>>>>>>> 95c0f49c3bca9ff0630bcf54450db2ee28a5ea8e
         
       </testcase>
     
