@@ -13,18 +13,20 @@ platform :ios do
   end
 
   lane :develop do
-
+    backupData
+    changePlaceFile()
     slack(
-  		message: "MESSAGE TEST " + get_version_number,
+  		message: "Build de la version : " + get_version_number,
   		slack_url: "https://hooks.slack.com/services/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"
   	)
-
   end
 
   lane :master do
+    backupData
+    devices
     set_github_release(
       repository_name: "lukile/TestTabBarLibrary",
-      api_token: "2c2f9557490c5ee1927ba550b819a2bfb2b8e3ce",
+      api_token: ENV["TOKEN"],
       name: "Release " + get_version_number,
       tag_name: last_git_tag,
       is_prerelease: true,
@@ -36,19 +38,51 @@ platform :ios do
 
     pod_push(path: "TestTabBarLibrary.podspec")
 
-
+  	messageSlack(message: "Test release")
   end
+
+  # Change destination backup file
+  lane :changePlaceFile do |options|
+    if options[:file].to_s.empty?
+      UI.user_error!("file is nil or empty")
+    else
+      file = options[:file] + '.back'
+      `cp ../#{file} ../fastlane/backup`
+      puts "File copied"
+      `rm ../#{file}`
+      puts 'Old file deleted'
+    end
+  end
+
+  # send slqck message
+  lane :messageSlack do |options|
+    choiceChannel = (options[:channel] == "") ? "#general" : options[:channel]
+    slack(
+      message: options[:message],
+      slack_url: "https://hooks.slack.com/services/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",
+      channel: choiceChannel
+    )
+  end
+
+  # test file test in devices
   lane :devices do
-    #scan(workspace: 'TestTabBar.xcodeproj/project.xcworkspace')
     run_tests(
       scheme: "TestTabBar",
       devices: ["iPhone XR", "iPhone XS"],
       clean: true,
     )
-		slack(
-			message: "Test devices",
-			slack_url: "https://hooks.slack.com/services/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",
-			channel: "#devices"
-		)
+		messageSlack(message: "Test devices", channel: "#devices")
   end
+
+  # backup file in backup folder
+  lane :backupData do
+  arrayFiles = ["TestTabBar/TabBar.swift", "TestTabBar/Position.swift", "TestTabBarTests/TestTabBarTests.swift"]
+  for file in arrayFiles do
+    backup_file(
+      path: file,
+    )
+    changePlaceFile(file: file)
+  end
+  messageSlack(message: "Test backup file",channel: "#backup")
+end
 end
