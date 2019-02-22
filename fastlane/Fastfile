@@ -15,7 +15,7 @@ platform :ios do
   lane :develop do
 
     slack(
-  		message: "MESSAGE TEST " + get_version_number,
+  		message: "Build de la version : " + get_version_number,
   		slack_url: "https://hooks.slack.com/services/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"
   	)
 
@@ -24,7 +24,7 @@ platform :ios do
   lane :master do
     set_github_release(
       repository_name: "lukile/TestTabBarLibrary",
-      api_token: "2c2f9557490c5ee1927ba550b819a2bfb2b8e3ce",
+      api_token: ENV['TOKEN'],
       name: "Release " + get_version_number,
       tag_name: last_git_tag,
       is_prerelease: true,

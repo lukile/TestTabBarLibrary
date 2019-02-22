@@ -31,6 +31,11 @@ fastlane ios develop
 fastlane ios master
 ```
 
+### ios devices
+```
+fastlane ios devices
+```
+
 
 ----
 
