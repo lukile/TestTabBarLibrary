@@ -79,7 +79,7 @@ platform :ios do
     arrayFiles = ["TestTabBar/TabBar.swift", "TestTabBar/Position.swift", "TestTabBarTests/TestTabBarTests.swift"]
     for file in arrayFiles do
       backup_file(
-        path: file,
+        path: file
       )
       changePlaceFile(file: file)
     end
