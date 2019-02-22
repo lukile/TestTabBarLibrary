@@ -16,11 +16,31 @@ or alternatively using `brew cask install fastlane`
 
 # Available Actions
 ## iOS
+### ios messageSlack
+```
+fastlane ios messageSlack
+```
+Description of what the lane does
+### ios changePlaceFile
+```
+fastlane ios changePlaceFile
+```
+
 ### ios release
 ```
 fastlane ios release
 ```
-Description of what the lane does
+
+### ios devices
+```
+fastlane ios devices
+```
+
+### ios backupData
+```
+fastlane ios backupData
+```
+
 
 ----
 

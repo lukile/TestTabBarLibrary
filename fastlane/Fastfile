@@ -2,25 +2,51 @@ default_platform(:ios)
 
 platform :ios do
   desc "Description of what the lane does"
+  # send slqck message
+  lane :messageSlack do |options|
+    choiceChannel = (options[:channel] == "") ? "#general" : options[:channel]
+    slack(
+      message: options[:message],
+      slack_url: "https://hooks.slack.com/services/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",
+      channel: choiceChannel
+    )
+  end
+  # Change destination backup file
+  lane :changePlaceFile do |options|
+    if options[:file].to_s.empty?  
+      UI.user_error!("file is nil or empty")
+    else
+      file = options[:file] + '.back' 
+      `cp ../#{file} ../fastlane/backup`
+      puts "File copied"
+      `rm ../#{file}`
+      puts 'Old file deleted'
+    end
+  end
+  # Push a podspec to trunk 
   lane :release do
     pod_push(path: 'TestTabBar.podspec')
-
-  	slack(
-  		message: "MESSAGE TEST ",
-  		slack_url: "https://hooks.slack.com/services/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"
-  	)
+  	messageSlack(message: "Test release")
   end
+  # test file test in devices
   lane :devices do
-    #scan(workspace: 'TestTabBar.xcodeproj/project.xcworkspace')
     run_tests(
       scheme: "TestTabBar",
       devices: ["iPhone XR", "iPhone XS"],
       clean: true,
     )
-		slack(
-			message: "Test devices",
-			slack_url: "https://hooks.slack.com/services/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",
-			channel: "#devices"
-		)
+		messageSlack(message: "Test devices", channel: "#devices")
+  end
+  # backup file in backup folder
+  lane :backupData do
+    arrayFiles = ["TestTabBar/TabBar.swift", "TestTabBar/Position.swift", "TestTabBarTests/TestTabBarTests.swift"]
+    for file in arrayFiles do
+      backup_file(
+        path: file,
+      )
+      changePlaceFile(file: file)
+    end
+    messageSlack(message: "Test backup file",channel: "#backup")
   end
 end
+
