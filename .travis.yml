@@ -13,4 +13,4 @@ before_install:
   - npm install bumped -g
 before_script:
   - bumped release patch
-script: bundle exec fastline build
+script: bundle exec fastlane build
