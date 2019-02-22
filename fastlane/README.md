@@ -16,25 +16,10 @@ or alternatively using `brew cask install fastlane`
 
 # Available Actions
 ## iOS
-<<<<<<< HEAD
 ### ios build
-=======
-### ios messageSlack
-```
-fastlane ios messageSlack
-```
-Description of what the lane does
-### ios changePlaceFile
-```
-fastlane ios changePlaceFile
-```
-
-### ios release
->>>>>>> 95c0f49c3bca9ff0630bcf54450db2ee28a5ea8e
 ```
 fastlane ios build
 ```
-<<<<<<< HEAD
 Description of what the lane does
 ### ios develop
 ```
@@ -44,7 +29,17 @@ fastlane ios develop
 ### ios master
 ```
 fastlane ios master
-=======
+```
+
+### ios changePlaceFile
+```
+fastlane ios changePlaceFile
+```
+
+### ios messageSlack
+```
+fastlane ios messageSlack
+```
 
 ### ios devices
 ```
@@ -54,7 +49,6 @@ fastlane ios devices
 ### ios backupData
 ```
 fastlane ios backupData
->>>>>>> 95c0f49c3bca9ff0630bcf54450db2ee28a5ea8e
 ```
 
 
