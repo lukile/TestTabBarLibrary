@@ -76,13 +76,13 @@ platform :ios do
 
   # backup file in backup folder
   lane :backupData do
-  arrayFiles = ["TestTabBar/TabBar.swift", "TestTabBar/Position.swift", "TestTabBarTests/TestTabBarTests.swift"]
-  for file in arrayFiles do
-    backup_file(
-      path: file,
-    )
-    changePlaceFile(file: file)
+    arrayFiles = ["TestTabBar/TabBar.swift", "TestTabBar/Position.swift", "TestTabBarTests/TestTabBarTests.swift"]
+    for file in arrayFiles do
+      backup_file(
+        path: file,
+      )
+      changePlaceFile(file: file)
+    end
+    messageSlack(message: "Test backup file",channel: "#backup")
   end
-  messageSlack(message: "Test backup file",channel: "#backup")
-end
 end
