@@ -5,32 +5,47 @@
     
     
       
-      <testcase classname="fastlane.lanes" name="0: default_platform" time="0.001658">
+      <testcase classname="fastlane.lanes" name="0: default_platform" time="0.001642">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="1: backup_file" time="0.002049">
+      <testcase classname="fastlane.lanes" name="1: backup_file" time="0.003846">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="2: backup_file" time="0.001674">
+      <testcase classname="fastlane.lanes" name="2: Switch to ios changePlaceFile lane" time="0.001328">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="3: backup_file" time="0.001661">
+      <testcase classname="fastlane.lanes" name="3: backup_file" time="0.00254">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="4: Switch to ios messageSlack lane" time="0.001158">
+      <testcase classname="fastlane.lanes" name="4: Switch to ios changePlaceFile lane" time="0.001278">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="5: slack" time="0.432633">
+      <testcase classname="fastlane.lanes" name="5: backup_file" time="0.004089">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="6: Switch to ios changePlaceFile lane" time="0.001941">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="7: Switch to ios messageSlack lane" time="0.00227">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="8: slack" time="0.497253">
         
       </testcase>
     

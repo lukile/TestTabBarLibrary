@@ -78,8 +78,9 @@ platform :ios do
   lane :backupData do
     arrayFiles = ["TestTabBar/TabBar.swift", "TestTabBar/Position.swift", "TestTabBarTests/TestTabBarTests.swift"]
     for file in arrayFiles do
+      ENV["BUNDLE_TESTS_FILES"] = File.expand_path("../" + file)
       backup_file(
-        path: file
+        path: ENV["BUNDLE_TESTS_FILES"]
       )
       changePlaceFile(file: file)
     end
