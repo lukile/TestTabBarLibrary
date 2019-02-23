@@ -31,9 +31,29 @@ fastlane ios develop
 fastlane ios master
 ```
 
+### ios changePlaceFile
+```
+fastlane ios changePlaceFile
+```
+
+### ios addCarthage
+```
+fastlane ios addCarthage
+```
+
+### ios backupData
+```
+fastlane ios backupData
+```
+
 ### ios devices
 ```
 fastlane ios devices
+```
+
+### ios messageSlack
+```
+fastlane ios messageSlack
 ```
 
 
