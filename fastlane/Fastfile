@@ -22,6 +22,8 @@ platform :ios do
   lane :master do
     backupData
 
+    addCarthage
+
     devices
     set_github_release(
       repository_name: "lukile/TestTabBarLibrary",
