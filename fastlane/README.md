@@ -36,9 +36,9 @@ fastlane ios master
 fastlane ios changePlaceFile
 ```
 
-### ios messageSlack
+### ios backupData
 ```
-fastlane ios messageSlack
+fastlane ios backupData
 ```
 
 ### ios devices
@@ -46,9 +46,9 @@ fastlane ios messageSlack
 fastlane ios devices
 ```
 
-### ios backupData
+### ios messageSlack
 ```
-fastlane ios backupData
+fastlane ios messageSlack
 ```
 
 

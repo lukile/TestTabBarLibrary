@@ -14,7 +14,6 @@ platform :ios do
 
   lane :develop do
     backupData
-    changePlaceFile()
     slack(
   		message: "Build de la version : " + get_version_number,
   		slack_url: "https://hooks.slack.com/services/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"
@@ -47,31 +46,11 @@ platform :ios do
       UI.user_error!("file is nil or empty")
     else
       file = options[:file] + '.back'
-      `cp ../#{file} ../fastlane/backup`
+      `cp #{file} ../fastlane/backup`
       puts "File copied"
-      `rm ../#{file}`
+      `rm #{file}`
       puts 'Old file deleted'
     end
-  end
-
-  # send slqck message
-  lane :messageSlack do |options|
-    choiceChannel = (options[:channel] == "") ? "#general" : options[:channel]
-    slack(
-      message: options[:message],
-      slack_url: "https://hooks.slack.com/services/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",
-      channel: choiceChannel
-    )
-  end
-
-  # test file test in devices
-  lane :devices do
-    run_tests(
-      scheme: "TestTabBar",
-      devices: ["iPhone XR", "iPhone XS"],
-      clean: true,
-    )
-		messageSlack(message: "Test devices", channel: "#devices")
   end
 
   # backup file in backup folder
@@ -82,8 +61,29 @@ platform :ios do
       backup_file(
         path: ENV["BUNDLE_TESTS_FILES"]
       )
-      changePlaceFile(file: file)
+      puts "FILE >>> " + ENV["BUNDLE_TESTS_FILES"]
+      changePlaceFile(file: ENV["BUNDLE_TESTS_FILES"])
     end
     messageSlack(message: "Test backup file",channel: "#backup")
+  end
+
+  # test file test in devices
+  lane :devices do
+    run_tests(
+      scheme: "TestTabBar",
+      devices: ["iPhone XR", "iPhone XS"],
+      clean: true,
+    )
+    messageSlack(message: "Test devices", channel: "#devices")
+  end
+
+  # send slqck message
+  lane :messageSlack do |options|
+    choiceChannel = (options[:channel] == "") ? "#general" : options[:channel]
+    slack(
+      message: options[:message],
+      slack_url: "https://hooks.slack.com/services/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",
+      channel: choiceChannel
+    )
   end
 end
