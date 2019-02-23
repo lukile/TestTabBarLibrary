@@ -20,22 +20,24 @@ platform :ios do
   end
 
   lane :master do
-    backupData
+    #backupData
 
     addCarthage
 
     devices
+
+    version_bump_podspec(path: "TestTabBarLibrary.podspec", bump_type: "patch")
+
+    version = version_get_podspec(path: "TestTabBarLibrary.podspec")
     set_github_release(
       repository_name: "lukile/TestTabBarLibrary",
       api_token: ENV["TOKEN"],
-      name: "Release " + get_version_number,
-      tag_name: last_git_tag,
+      name: "Release " + version,
+      tag_name: version,
       is_prerelease: true,
       description: "This release's description Test",
       commitish: "master"
     )
-
-    version_bump_podspec(path: "TestTabBarLibrary.podspec", bump_type: "patch")
 
     pod_push(path: "TestTabBarLibrary.podspec")
 
@@ -47,18 +49,16 @@ platform :ios do
     if options[:file].to_s.empty?
       UI.user_error!("file is nil or empty")
     else
-      file = options[:file] + '.back'
-      `cp #{file} ../fastlane/backup`
+      file = options[:file] + ".back"
+      "cp #{file} ../fastlane/backup"
       puts "File copied"
-      `rm #{file}`
-      puts 'Old file deleted'
+      "m #{file}"
+      puts "Old file deleted"
     end
   end
 
   lane :addCarthage do
     carthage(
-      frameworks: ["SnapKit"],   # Specify which frameworks to archive (only for the archive command)
-      output: "*.frameworks.zip",      # Specify the output archive name (only for the archive command)
       use_ssh: false,   # Use SSH for downloading GitHub repositories.
       use_submodules: false,      # Add dependencies as Git submodules.
       use_binaries: true,         # Check out dependency repositories even when prebuilt frameworks exist
@@ -100,7 +100,7 @@ platform :ios do
     messageSlack(message: "Test devices", channel: "#devices")
   end
 
-  # send slqck message
+  # send slack message
   lane :messageSlack do |options|
     choiceChannel = (options[:channel] == "") ? "#general" : options[:channel]
     slack(
