@@ -6,12 +6,17 @@ branches:
     - develop
 notifications:
   email: false
+cache:
+  directories:
+  - Carthage
 before_install:
   - gem install cocoapods --pre
   - gem install bundler
   - gem install fastlane -NV
   - bundle install
   - npm install bumped -g
+
+  - carthage update --cache-builds
 before_script:
   - bumped release patch
 script: bundle exec fastlane build
