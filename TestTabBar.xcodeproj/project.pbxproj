@@ -14,6 +14,13 @@
 		FD0BBA7B221A165F002DF3CD /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0BBA7A221A165F002DF3CD /* TabBar.swift */; };
 		FD0BBA7E221A179A002DF3CD /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD0BBA7D221A179A002DF3CD /* SnapKit.framework */; };
 		FD0BBA80221A180C002DF3CD /* Position.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0BBA7F221A180C002DF3CD /* Position.swift */; };
+		FD0E03DB2222FCA0004D6880 /* Assets.xcassets in CopyFiles */ = {isa = PBXBuildFile; fileRef = FD695B682221471D00EF794A /* Assets.xcassets */; };
+		FD0E03DC2222FCED004D6880 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD695B682221471D00EF794A /* Assets.xcassets */; };
+		FD695B692221471D00EF794A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD695B682221471D00EF794A /* Assets.xcassets */; };
+		FD695B6B222180AB00EF794A /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD695B6A222180AB00EF794A /* TabBarViewController.swift */; };
+		FD695B7022219F6C00EF794A /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD0BBA7D221A179A002DF3CD /* SnapKit.framework */; };
+		FD695B742221A29500EF794A /* SnapKit.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = FD0BBA7D221A179A002DF3CD /* SnapKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FD695B772221A31500EF794A /* SnapKit.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = FD0BBA7D221A179A002DF3CD /* SnapKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +33,30 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		FD695B732221A27400EF794A /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				FD695B742221A29500EF794A /* SnapKit.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD695B762221A30700EF794A /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				FD0E03DB2222FCA0004D6880 /* Assets.xcassets in CopyFiles */,
+				FD695B772221A31500EF794A /* SnapKit.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		FD0BBA60221A1649002DF3CD /* TestTabBar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TestTabBar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD0BBA63221A1649002DF3CD /* TestTabBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestTabBar.h; sourceTree = "<group>"; };
@@ -36,6 +67,8 @@
 		FD0BBA7A221A165F002DF3CD /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 		FD0BBA7D221A179A002DF3CD /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = Carthage/Build/iOS/SnapKit.framework; sourceTree = "<group>"; };
 		FD0BBA7F221A180C002DF3CD /* Position.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Position.swift; sourceTree = "<group>"; };
+		FD695B682221471D00EF794A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "../../../../Downloads/ReimplementTabBarIos-createLibrary 2/TestTabBar/Assets.xcassets"; sourceTree = "<group>"; };
+		FD695B6A222180AB00EF794A /* TabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TabBarViewController.swift; path = "../../../../Downloads/ReimplementTabBarIos-createLibrary 2/TestTabBar/TabBarViewController.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,7 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FD0BBA6A221A1649002DF3CD /* TestTabBar.framework in Frameworks */,
+				FD695B7022219F6C00EF794A /* SnapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,7 +113,9 @@
 		FD0BBA62221A1649002DF3CD /* TestTabBar */ = {
 			isa = PBXGroup;
 			children = (
+				FD695B682221471D00EF794A /* Assets.xcassets */,
 				FD0BBA63221A1649002DF3CD /* TestTabBar.h */,
+				FD695B6A222180AB00EF794A /* TabBarViewController.swift */,
 				FD0BBA64221A1649002DF3CD /* Info.plist */,
 				FD0BBA7A221A165F002DF3CD /* TabBar.swift */,
 				FD0BBA7F221A180C002DF3CD /* Position.swift */,
@@ -127,6 +162,7 @@
 				FD0BBA5C221A1649002DF3CD /* Sources */,
 				FD0BBA5D221A1649002DF3CD /* Frameworks */,
 				FD0BBA5E221A1649002DF3CD /* Resources */,
+				FD695B732221A27400EF794A /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -144,6 +180,7 @@
 				FD0BBA65221A1649002DF3CD /* Sources */,
 				FD0BBA66221A1649002DF3CD /* Frameworks */,
 				FD0BBA67221A1649002DF3CD /* Resources */,
+				FD695B762221A30700EF794A /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -197,7 +234,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0268A9602223157A005FF4F3 /* SnapKit.framework in Resources */,
+				FD695B692221471D00EF794A /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -205,6 +242,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD0E03DC2222FCED004D6880 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,6 +254,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FD0BBA80221A180C002DF3CD /* Position.swift in Sources */,
+				FD695B6B222180AB00EF794A /* TabBarViewController.swift in Sources */,
 				FD0BBA7B221A165F002DF3CD /* TabBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -242,6 +281,7 @@
 		FD0BBA72221A1649002DF3CD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -298,6 +338,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -306,6 +347,7 @@
 		FD0BBA73221A1649002DF3CD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -341,6 +383,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -355,7 +398,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				VALIDATE_PRODUCT = YES;
+				VALIDATE_PRODUCT = NO;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -364,6 +407,7 @@
 		FD0BBA75221A1649002DF3CD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
@@ -394,6 +438,7 @@
 		FD0BBA76221A1649002DF3CD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
@@ -425,6 +470,10 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = TestTabBarTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -443,6 +492,10 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = TestTabBarTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
