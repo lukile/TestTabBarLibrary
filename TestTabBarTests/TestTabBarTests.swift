@@ -33,7 +33,7 @@ class TestTabBarTests: XCTestCase {
     }
     func testImgContent() {
         let bundle = Bundle.init(for: TestTabBarTests.self)
-        let arrayImage: [String] = ["more", "info"]
+        let arrayImage: [String] = ["more", "search"]
         for image in arrayImage {
              let image = UIImage(named: image, in: bundle, compatibleWith: nil)
             guard  image != nil else {

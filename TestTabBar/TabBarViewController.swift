@@ -5,17 +5,16 @@
 //  Created by under on 26/01/2019.
 //  Copyright © 2019 under. All rights reserved.
 //
-
 import UIKit
 
 public class TabBarViewController: UIViewController {
     var tabBar: TabBar { return self.view as! TabBar}
     
-  
+    
     override public func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
-    
+        
         //tabBar.setContainer(container: self)
         tabBar.setTabBarColor(color: .blue)
         let position = tabBar.definePosition(position: Position.LEFT)
@@ -27,10 +26,9 @@ public class TabBarViewController: UIViewController {
         
         //tabBar.addButtonToTabBar(buttons: buttons)
         
-
-    
+        
+        
         //self.view.addSubview(tabBar)
-
     }
     
     override public func loadView() {

@@ -7,17 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0268A9602223157A005FF4F3 /* SnapKit.framework in Resources */ = {isa = PBXBuildFile; fileRef = FD0BBA7D221A179A002DF3CD /* SnapKit.framework */; };
-		FD0BBA6A221A1649002DF3CD /* TestTabBar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD0BBA60221A1649002DF3CD /* TestTabBar.framework */; };
+		0268A96222231C99005FF4F3 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0268A96122231C99005FF4F3 /* TabBarViewController.swift */; };
+		0268A96422231DB5005FF4F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0268A96322231DB5005FF4F3 /* Assets.xcassets */; };
 		FD0BBA6F221A1649002DF3CD /* TestTabBarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0BBA6E221A1649002DF3CD /* TestTabBarTests.swift */; };
 		FD0BBA71221A1649002DF3CD /* TestTabBar.h in Headers */ = {isa = PBXBuildFile; fileRef = FD0BBA63221A1649002DF3CD /* TestTabBar.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FD0BBA7B221A165F002DF3CD /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0BBA7A221A165F002DF3CD /* TabBar.swift */; };
 		FD0BBA7E221A179A002DF3CD /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD0BBA7D221A179A002DF3CD /* SnapKit.framework */; };
 		FD0BBA80221A180C002DF3CD /* Position.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0BBA7F221A180C002DF3CD /* Position.swift */; };
-		FD0E03DB2222FCA0004D6880 /* Assets.xcassets in CopyFiles */ = {isa = PBXBuildFile; fileRef = FD695B682221471D00EF794A /* Assets.xcassets */; };
-		FD0E03DC2222FCED004D6880 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD695B682221471D00EF794A /* Assets.xcassets */; };
-		FD695B692221471D00EF794A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD695B682221471D00EF794A /* Assets.xcassets */; };
-		FD695B6B222180AB00EF794A /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD695B6A222180AB00EF794A /* TabBarViewController.swift */; };
 		FD695B7022219F6C00EF794A /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD0BBA7D221A179A002DF3CD /* SnapKit.framework */; };
 		FD695B742221A29500EF794A /* SnapKit.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = FD0BBA7D221A179A002DF3CD /* SnapKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		FD695B772221A31500EF794A /* SnapKit.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = FD0BBA7D221A179A002DF3CD /* SnapKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -50,7 +46,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				FD0E03DB2222FCA0004D6880 /* Assets.xcassets in CopyFiles */,
 				FD695B772221A31500EF794A /* SnapKit.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -58,6 +53,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0268A96122231C99005FF4F3 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		0268A96322231DB5005FF4F3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FD0BBA60221A1649002DF3CD /* TestTabBar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TestTabBar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD0BBA63221A1649002DF3CD /* TestTabBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestTabBar.h; sourceTree = "<group>"; };
 		FD0BBA64221A1649002DF3CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -67,8 +64,6 @@
 		FD0BBA7A221A165F002DF3CD /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 		FD0BBA7D221A179A002DF3CD /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = Carthage/Build/iOS/SnapKit.framework; sourceTree = "<group>"; };
 		FD0BBA7F221A180C002DF3CD /* Position.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Position.swift; sourceTree = "<group>"; };
-		FD695B682221471D00EF794A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "../../../../Downloads/ReimplementTabBarIos-createLibrary 2/TestTabBar/Assets.xcassets"; sourceTree = "<group>"; };
-		FD695B6A222180AB00EF794A /* TabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TabBarViewController.swift; path = "../../../../Downloads/ReimplementTabBarIos-createLibrary 2/TestTabBar/TabBarViewController.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,12 +108,12 @@
 		FD0BBA62221A1649002DF3CD /* TestTabBar */ = {
 			isa = PBXGroup;
 			children = (
-				FD695B682221471D00EF794A /* Assets.xcassets */,
 				FD0BBA63221A1649002DF3CD /* TestTabBar.h */,
-				FD695B6A222180AB00EF794A /* TabBarViewController.swift */,
 				FD0BBA64221A1649002DF3CD /* Info.plist */,
 				FD0BBA7A221A165F002DF3CD /* TabBar.swift */,
 				FD0BBA7F221A180C002DF3CD /* Position.swift */,
+				0268A96122231C99005FF4F3 /* TabBarViewController.swift */,
+				0268A96322231DB5005FF4F3 /* Assets.xcassets */,
 			);
 			path = TestTabBar;
 			sourceTree = "<group>";
@@ -234,7 +229,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FD695B692221471D00EF794A /* Assets.xcassets in Resources */,
+				0268A96422231DB5005FF4F3 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -242,7 +237,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FD0E03DC2222FCED004D6880 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,7 +248,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FD0BBA80221A180C002DF3CD /* Position.swift in Sources */,
-				FD695B6B222180AB00EF794A /* TabBarViewController.swift in Sources */,
+				0268A96222231C99005FF4F3 /* TabBarViewController.swift in Sources */,
 				FD0BBA7B221A165F002DF3CD /* TabBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
