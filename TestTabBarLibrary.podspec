@@ -12,6 +12,6 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '8.0'
   s.source_files = "TestTabBar/*.{swift,h}"
   s.swift_version = '4.2'
-  s.framework    = 'Carthage'
+  s.framework    = 'SnapKit'
   s.dependency 'SnapKit'
 end
