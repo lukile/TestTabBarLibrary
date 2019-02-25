@@ -41,8 +41,7 @@ platform :ios do
       description: "This release's description Test",
       commitish: "master"
     )
-
-    pod_push(path: "TestTabBarLibrary.podspec")
+    pod_push(path: "TestTabBarLibrary.podspec", allow_warnings: true)
 
   	#messageSlack(message: "Test release")
   end
