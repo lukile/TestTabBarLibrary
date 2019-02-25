@@ -13,14 +13,14 @@ class TestTabBarTests: XCTestCase {
     var taBbarViewController: TabBarViewController = TabBarViewController()
     var tabBar: TabBar { return taBbarViewController.view as! TabBar}
    
-    func testOrientation() {
+    /*func testOrientation() {
         let portrait = XCUIDevice.shared.orientation.isPortrait
         XCTAssertEqual(portrait, tabBar.isLandscape())
         self.waitUntilRotation(to: UIInterfaceOrientation.landscapeLeft)
         sleep(3)
         let landscape = XCUIDevice.shared.orientation.isLandscape
         XCTAssertEqual(landscape, tabBar.isLandscape())
-    }
+    }*/
     func testPosition() {
         let positions: [Position] = [Position.BOTTOM, Position.LEFT, Position.TOP, Position.RIGHT]
         for i in 0..<positions.count {
