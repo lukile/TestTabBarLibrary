@@ -55,7 +55,7 @@ platform :ios do
       file = options[:file] + ".back"
       "cp #{file} ../fastlane/backup"
       puts "File copied"
-      "m #{file}"
+      "rm #{file}"
       puts "Old file deleted"
     end
   end
