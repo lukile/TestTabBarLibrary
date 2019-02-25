@@ -19,4 +19,5 @@ before_install:
   - carthage update --cache-builds
 before_script:
   - bumped release patch
-script: bundle exec fastlane build --repo-update
+  - pod trunk register charlotte.pisois.sio@gmail.com 'Picois Charlotte' --description='macbook pro'
+script: bundle exec fastlane build
