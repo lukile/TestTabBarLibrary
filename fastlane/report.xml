@@ -5,119 +5,119 @@
     
     
       
-      <testcase classname="fastlane.lanes" name="00: opt_out_usage" time="0.00194">
+      <testcase classname="fastlane.lanes" name="00: opt_out_usage" time="0.001736">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="01: default_platform" time="0.001136">
+      <testcase classname="fastlane.lanes" name="01: default_platform" time="0.001096">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="02: Switch to ios addCarthage lane" time="0.001317">
+      <testcase classname="fastlane.lanes" name="02: Switch to ios addCarthage lane" time="0.001444">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="03: carthage" time="47.007789">
+      <testcase classname="fastlane.lanes" name="03: carthage" time="52.374273">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="04: Switch to ios messageSlack lane" time="0.001528">
+      <testcase classname="fastlane.lanes" name="04: Switch to ios messageSlack lane" time="0.00196">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="05: slack" time="0.489282">
+      <testcase classname="fastlane.lanes" name="05: slack" time="0.351893">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="06: Switch to ios backupData lane" time="0.001523">
+      <testcase classname="fastlane.lanes" name="06: Switch to ios backupData lane" time="0.001681">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="07: backup_file" time="0.002057">
+      <testcase classname="fastlane.lanes" name="07: backup_file" time="0.004336">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="08: Switch to ios changePlaceFile lane" time="0.001204">
+      <testcase classname="fastlane.lanes" name="08: Switch to ios changePlaceFile lane" time="0.001457">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="09: backup_file" time="0.002147">
+      <testcase classname="fastlane.lanes" name="09: backup_file" time="0.002565">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="10: Switch to ios changePlaceFile lane" time="0.0018">
+      <testcase classname="fastlane.lanes" name="10: Switch to ios changePlaceFile lane" time="0.001368">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="11: backup_file" time="0.002124">
+      <testcase classname="fastlane.lanes" name="11: backup_file" time="0.002107">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="12: Switch to ios changePlaceFile lane" time="0.001232">
+      <testcase classname="fastlane.lanes" name="12: Switch to ios changePlaceFile lane" time="0.001505">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="13: Switch to ios messageSlack lane" time="0.001617">
+      <testcase classname="fastlane.lanes" name="13: Switch to ios messageSlack lane" time="0.001602">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="14: slack" time="0.481348">
+      <testcase classname="fastlane.lanes" name="14: slack" time="0.311533">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="15: Switch to ios devices lane" time="0.001816">
+      <testcase classname="fastlane.lanes" name="15: Switch to ios devices lane" time="0.001732">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="16: run_tests" time="39.554744">
+      <testcase classname="fastlane.lanes" name="16: run_tests" time="44.891396">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="17: Switch to ios messageSlack lane" time="0.002158">
+      <testcase classname="fastlane.lanes" name="17: Switch to ios messageSlack lane" time="0.001838">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="18: slack" time="0.545626">
+      <testcase classname="fastlane.lanes" name="18: slack" time="0.33237">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="19: version_bump_podspec" time="0.005147">
+      <testcase classname="fastlane.lanes" name="19: version_bump_podspec" time="0.004589">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="20: version_get_podspec" time="0.003254">
+      <testcase classname="fastlane.lanes" name="20: version_get_podspec" time="0.003124">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="21: set_github_release" time="44.54363">
+      <testcase classname="fastlane.lanes" name="21: set_github_release" time="316.372337">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="22: pod_push" time="49.467579">
+      <testcase classname="fastlane.lanes" name="22: pod_push" time="45.48222">
         
-          <failure message="/Library/Ruby/Gems/2.3.0/gems/fastlane-2.116.1/fastlane/lib/fastlane/actions/actions_helper.rb:48:in `execute_action'&#10;/Library/Ruby/Gems/2.3.0/gems/fastlane-2.116.1/fastlane/lib/fastlane/runner.rb:232:in `block in execute_action'&#10;/Library/Ruby/Gems/2.3.0/gems/fastlane-2.116.1/fastlane/lib/fastlane/runner.rb:227:in `chdir'&#10;/Library/Ruby/Gems/2.3.0/gems/fastlane-2.116.1/fastlane/lib/fastlane/runner.rb:227:in `execute_action'&#10;/Library/Ruby/Gems/2.3.0/gems/fastlane-2.116.1/fastlane/lib/fastlane/runner.rb:157:in `trigger_action_by_name'&#10;/Library/Ruby/Gems/2.3.0/gems/fastlane-2.116.1/fastlane/lib/fastlane/fast_file.rb:154:in `method_missing'&#10;Fastfile:45:in `block (2 levels) in parsing_binding'&#10;/Library/Ruby/Gems/2.3.0/gems/fastlane-2.116.1/fastlane/lib/fastlane/lane.rb:33:in `call'&#10;/Library/Ruby/Gems/2.3.0/gems/fastlane-2.116.1/fastlane/lib/fastlane/runner.rb:49:in `block in execute'&#10;/Library/Ruby/Gems/2.3.0/gems/fastlane-2.116.1/fastlane/lib/fastlane/runner.rb:45:in `chdir'&#10;/Library/Ruby/Gems/2.3.0/gems/fastlane-2.116.1/fastlane/lib/fastlane/runner.rb:45:in `execute'&#10;/Library/Ruby/Gems/2.3.0/gems/fastlane-2.116.1/fastlane/lib/fastlane/lane_manager.rb:56:in `cruise_lane'&#10;/Library/Ruby/Gems/2.3.0/gems/fastlane-2.116.1/fastlane/lib/fastlane/command_line_handler.rb:36:in `handle'&#10;/Library/Ruby/Gems/2.3.0/gems/fastlane-2.116.1/fastlane/lib/fastlane/commands_generator.rb:108:in `block (2 levels) in run'&#10;/Library/Ruby/Gems/2.3.0/gems/commander-fastlane-4.4.6/lib/commander/command.rb:178:in `call'&#10;/Library/Ruby/Gems/2.3.0/gems/commander-fastlane-4.4.6/lib/commander/command.rb:153:in `run'&#10;/Library/Ruby/Gems/2.3.0/gems/commander-fastlane-4.4.6/lib/commander/runner.rb:476:in `run_active_command'&#10;/Library/Ruby/Gems/2.3.0/gems/fastlane-2.116.1/fastlane_core/lib/fastlane_core/ui/fastlane_runner.rb:76:in `run!'&#10;/Library/Ruby/Gems/2.3.0/gems/commander-fastlane-4.4.6/lib/commander/delegates.rb:15:in `run!'&#10;/Library/Ruby/Gems/2.3.0/gems/fastlane-2.116.1/fastlane/lib/fastlane/commands_generator.rb:333:in `run'&#10;/Library/Ruby/Gems/2.3.0/gems/fastlane-2.116.1/fastlane/lib/fastlane/commands_generator.rb:41:in `start'&#10;/Library/Ruby/Gems/2.3.0/gems/fastlane-2.116.1/fastlane/lib/fastlane/cli_tools_distributor.rb:119:in `take_off'&#10;/Library/Ruby/Gems/2.3.0/gems/fastlane-2.116.1/bin/fastlane:23:in `&lt;top (required)&gt;'&#10;/usr/local/bin/fastlane:22:in `load'&#10;/usr/local/bin/fastlane:22:in `&lt;top (required)&gt;'&#10;/Library/Ruby/Gems/2.3.0/gems/bundler-2.0.1/lib/bundler/cli/exec.rb:74:in `load'&#10;/Library/Ruby/Gems/2.3.0/gems/bundler-2.0.1/lib/bundler/cli/exec.rb:74:in `kernel_load'&#10;/Library/Ruby/Gems/2.3.0/gems/bundler-2.0.1/lib/bundler/cli/exec.rb:28:in `run'&#10;/Library/Ruby/Gems/2.3.0/gems/bundler-2.0.1/lib/bundler/cli.rb:463:in `exec'&#10;/Library/Ruby/Gems/2.3.0/gems/bundler-2.0.1/lib/bundler/vendor/thor/lib/thor/command.rb:27:in `run'&#10;/Library/Ruby/Gems/2.3.0/gems/bundler-2.0.1/lib/bundler/vendor/thor/lib/thor/invocation.rb:126:in `invoke_command'&#10;/Library/Ruby/Gems/2.3.0/gems/bundler-2.0.1/lib/bundler/vendor/thor/lib/thor.rb:387:in `dispatch'&#10;/Library/Ruby/Gems/2.3.0/gems/bundler-2.0.1/lib/bundler/cli.rb:27:in `dispatch'&#10;/Library/Ruby/Gems/2.3.0/gems/bundler-2.0.1/lib/bundler/vendor/thor/lib/thor/base.rb:466:in `start'&#10;/Library/Ruby/Gems/2.3.0/gems/bundler-2.0.1/lib/bundler/cli.rb:18:in `start'&#10;/Library/Ruby/Gems/2.3.0/gems/bundler-2.0.1/exe/bundle:30:in `block in &lt;top (required)&gt;'&#10;/Library/Ruby/Gems/2.3.0/gems/bundler-2.0.1/lib/bundler/friendly_errors.rb:124:in `with_friendly_errors'&#10;/Library/Ruby/Gems/2.3.0/gems/bundler-2.0.1/exe/bundle:22:in `&lt;top (required)&gt;'&#10;/usr/local/bin/bundle:22:in `load'&#10;/usr/local/bin/bundle:22:in `&lt;main&gt;'&#10;&#10;Exit status of command 'pod trunk push 'TestTabBarLibrary.podspec'' was 1 instead of 0.&#10;Updating spec repo `master`&#10;&#10;CocoaPods 1.7.0.beta.1 is available.&#10;To update use: `sudo gem install cocoapods --pre`&#10;[!] This is a test version we'd love you to try.&#10;&#10;For more information, see https://blog.cocoapods.org and the CHANGELOG for this version at https://github.com/CocoaPods/CocoaPods/releases/tag/1.7.0.beta.1&#10;&#10;Validating podspec&#10; -&gt; TestTabBarLibrary -&gt; TestTabBarLibrary (1.0.38)&#10;    - WARN  | [iOS] license: Unable to find a license file&#10;    - ERROR | [iOS] xcodebuild: Returned an unsuccessful exit code. You can use `--verbose` for more information.&#10;    - NOTE  | xcodebuild:  note: Using new build system&#10;    - NOTE  | [iOS] xcodebuild:  note: Planning build&#10;    - NOTE  | [iOS] xcodebuild:  note: Constructing build description&#10;    - NOTE  | [iOS] xcodebuild:  warning: Skipping code signing because the target does not have an Info.plist file. (in target 'App')&#10;    - WARN  | xcodebuild:  TestTabBarLibrary/TestTabBar/TabBar.swift:366:58: warning: non-breaking space (U+00A0) used instead of regular space&#10;    - ERROR | xcodebuild:  TestTabBarLibrary/TestTabBar/TabBar.swift:11:8: error: no such module 'SnapKit'&#10;&#10;[!] The spec did not pass validation, due to 2 errors and 2 warnings.&#10;&#10;[!] Unable to read the license file `LICENSE` for the spec `TestTabBarLibrary (1.0.38)`&#10;&#10;[!] Unable to read the license file `LICENSE` for the spec `TestTabBarLibrary (1.0.38)`&#10;" />
+          <failure message="/Library/Ruby/Gems/2.3.0/gems/fastlane-2.116.1/fastlane/lib/fastlane/actions/actions_helper.rb:48:in `execute_action'&#10;/Library/Ruby/Gems/2.3.0/gems/fastlane-2.116.1/fastlane/lib/fastlane/runner.rb:232:in `block in execute_action'&#10;/Library/Ruby/Gems/2.3.0/gems/fastlane-2.116.1/fastlane/lib/fastlane/runner.rb:227:in `chdir'&#10;/Library/Ruby/Gems/2.3.0/gems/fastlane-2.116.1/fastlane/lib/fastlane/runner.rb:227:in `execute_action'&#10;/Library/Ruby/Gems/2.3.0/gems/fastlane-2.116.1/fastlane/lib/fastlane/runner.rb:157:in `trigger_action_by_name'&#10;/Library/Ruby/Gems/2.3.0/gems/fastlane-2.116.1/fastlane/lib/fastlane/fast_file.rb:154:in `method_missing'&#10;Fastfile:45:in `block (2 levels) in parsing_binding'&#10;/Library/Ruby/Gems/2.3.0/gems/fastlane-2.116.1/fastlane/lib/fastlane/lane.rb:33:in `call'&#10;/Library/Ruby/Gems/2.3.0/gems/fastlane-2.116.1/fastlane/lib/fastlane/runner.rb:49:in `block in execute'&#10;/Library/Ruby/Gems/2.3.0/gems/fastlane-2.116.1/fastlane/lib/fastlane/runner.rb:45:in `chdir'&#10;/Library/Ruby/Gems/2.3.0/gems/fastlane-2.116.1/fastlane/lib/fastlane/runner.rb:45:in `execute'&#10;/Library/Ruby/Gems/2.3.0/gems/fastlane-2.116.1/fastlane/lib/fastlane/lane_manager.rb:56:in `cruise_lane'&#10;/Library/Ruby/Gems/2.3.0/gems/fastlane-2.116.1/fastlane/lib/fastlane/command_line_handler.rb:36:in `handle'&#10;/Library/Ruby/Gems/2.3.0/gems/fastlane-2.116.1/fastlane/lib/fastlane/commands_generator.rb:108:in `block (2 levels) in run'&#10;/Library/Ruby/Gems/2.3.0/gems/commander-fastlane-4.4.6/lib/commander/command.rb:178:in `call'&#10;/Library/Ruby/Gems/2.3.0/gems/commander-fastlane-4.4.6/lib/commander/command.rb:153:in `run'&#10;/Library/Ruby/Gems/2.3.0/gems/commander-fastlane-4.4.6/lib/commander/runner.rb:476:in `run_active_command'&#10;/Library/Ruby/Gems/2.3.0/gems/fastlane-2.116.1/fastlane_core/lib/fastlane_core/ui/fastlane_runner.rb:76:in `run!'&#10;/Library/Ruby/Gems/2.3.0/gems/commander-fastlane-4.4.6/lib/commander/delegates.rb:15:in `run!'&#10;/Library/Ruby/Gems/2.3.0/gems/fastlane-2.116.1/fastlane/lib/fastlane/commands_generator.rb:333:in `run'&#10;/Library/Ruby/Gems/2.3.0/gems/fastlane-2.116.1/fastlane/lib/fastlane/commands_generator.rb:41:in `start'&#10;/Library/Ruby/Gems/2.3.0/gems/fastlane-2.116.1/fastlane/lib/fastlane/cli_tools_distributor.rb:119:in `take_off'&#10;/Library/Ruby/Gems/2.3.0/gems/fastlane-2.116.1/bin/fastlane:23:in `&lt;top (required)&gt;'&#10;/usr/local/bin/fastlane:22:in `load'&#10;/usr/local/bin/fastlane:22:in `&lt;top (required)&gt;'&#10;/Library/Ruby/Gems/2.3.0/gems/bundler-2.0.1/lib/bundler/cli/exec.rb:74:in `load'&#10;/Library/Ruby/Gems/2.3.0/gems/bundler-2.0.1/lib/bundler/cli/exec.rb:74:in `kernel_load'&#10;/Library/Ruby/Gems/2.3.0/gems/bundler-2.0.1/lib/bundler/cli/exec.rb:28:in `run'&#10;/Library/Ruby/Gems/2.3.0/gems/bundler-2.0.1/lib/bundler/cli.rb:463:in `exec'&#10;/Library/Ruby/Gems/2.3.0/gems/bundler-2.0.1/lib/bundler/vendor/thor/lib/thor/command.rb:27:in `run'&#10;/Library/Ruby/Gems/2.3.0/gems/bundler-2.0.1/lib/bundler/vendor/thor/lib/thor/invocation.rb:126:in `invoke_command'&#10;/Library/Ruby/Gems/2.3.0/gems/bundler-2.0.1/lib/bundler/vendor/thor/lib/thor.rb:387:in `dispatch'&#10;/Library/Ruby/Gems/2.3.0/gems/bundler-2.0.1/lib/bundler/cli.rb:27:in `dispatch'&#10;/Library/Ruby/Gems/2.3.0/gems/bundler-2.0.1/lib/bundler/vendor/thor/lib/thor/base.rb:466:in `start'&#10;/Library/Ruby/Gems/2.3.0/gems/bundler-2.0.1/lib/bundler/cli.rb:18:in `start'&#10;/Library/Ruby/Gems/2.3.0/gems/bundler-2.0.1/exe/bundle:30:in `block in &lt;top (required)&gt;'&#10;/Library/Ruby/Gems/2.3.0/gems/bundler-2.0.1/lib/bundler/friendly_errors.rb:124:in `with_friendly_errors'&#10;/Library/Ruby/Gems/2.3.0/gems/bundler-2.0.1/exe/bundle:22:in `&lt;top (required)&gt;'&#10;/usr/local/bin/bundle:22:in `load'&#10;/usr/local/bin/bundle:22:in `&lt;main&gt;'&#10;&#10;Exit status of command 'pod trunk push 'TestTabBarLibrary.podspec'' was 1 instead of 0.&#10;Updating spec repo `master`&#10;&#10;CocoaPods 1.7.0.beta.1 is available.&#10;To update use: `sudo gem install cocoapods --pre`&#10;[!] This is a test version we'd love you to try.&#10;&#10;For more information, see https://blog.cocoapods.org and the CHANGELOG for this version at https://github.com/CocoaPods/CocoaPods/releases/tag/1.7.0.beta.1&#10;&#10;Validating podspec&#10; -&gt; TestTabBarLibrary -&gt; TestTabBarLibrary (1.0.39)&#10;    - WARN  | [iOS] license: Unable to find a license file&#10;    - ERROR | [iOS] xcodebuild: Returned an unsuccessful exit code. You can use `--verbose` for more information.&#10;    - NOTE  | xcodebuild:  note: Using new build system&#10;    - NOTE  | [iOS] xcodebuild:  note: Planning build&#10;    - NOTE  | [iOS] xcodebuild:  note: Constructing build description&#10;    - NOTE  | [iOS] xcodebuild:  warning: Skipping code signing because the target does not have an Info.plist file. (in target 'App')&#10;    - WARN  | xcodebuild:  TestTabBarLibrary/TestTabBar/TabBar.swift:366:58: warning: non-breaking space (U+00A0) used instead of regular space&#10;    - ERROR | xcodebuild:  TestTabBarLibrary/TestTabBar/TabBar.swift:11:8: error: no such module 'SnapKit'&#10;&#10;[!] The spec did not pass validation, due to 2 errors and 2 warnings.&#10;&#10;[!] Unable to read the license file `LICENSE` for the spec `TestTabBarLibrary (1.0.39)`&#10;&#10;[!] Unable to read the license file `LICENSE` for the spec `TestTabBarLibrary (1.0.39)`&#10;" />
         
       </testcase>
     
