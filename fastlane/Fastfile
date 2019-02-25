@@ -27,7 +27,7 @@ platform :ios do
   lane :master do
     backupData
 
-    devices
+    #devices
 
     version_bump_podspec(path: "TestTabBarLibrary.podspec", bump_type: "patch")
 
@@ -41,7 +41,7 @@ platform :ios do
       description: "This release's description Test",
       commitish: "master"
     )
-    
+
     pod_push(path: "TestTabBarLibrary.podspec", allow_warnings: true)
 
   	#messageSlack(message: "Test release")
