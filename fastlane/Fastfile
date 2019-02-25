@@ -87,7 +87,7 @@ platform :ios do
   lane :devices do
     run_tests(
       scheme: "TestTabBar",
-      devices: ["iPhone XR", "iPhone XS"],
+      devices: ["iPhone 8", "iPhone XS"],
       clean: true,
     )
     messageSlack(message: "Test devices", channel: "#devices")

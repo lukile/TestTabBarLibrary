@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		0268A96222231C99005FF4F3 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0268A96122231C99005FF4F3 /* TabBarViewController.swift */; };
 		0268A96422231DB5005FF4F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0268A96322231DB5005FF4F3 /* Assets.xcassets */; };
+		0268A9652223FA7D005FF4F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0268A96322231DB5005FF4F3 /* Assets.xcassets */; };
+		0268A96622240194005FF4F3 /* SnapKit.framework in Resources */ = {isa = PBXBuildFile; fileRef = FD0BBA7D221A179A002DF3CD /* SnapKit.framework */; };
+		0268A9672224019D005FF4F3 /* SnapKit.framework in Resources */ = {isa = PBXBuildFile; fileRef = FD0BBA7D221A179A002DF3CD /* SnapKit.framework */; };
 		FD0BBA6F221A1649002DF3CD /* TestTabBarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0BBA6E221A1649002DF3CD /* TestTabBarTests.swift */; };
 		FD0BBA71221A1649002DF3CD /* TestTabBar.h in Headers */ = {isa = PBXBuildFile; fileRef = FD0BBA63221A1649002DF3CD /* TestTabBar.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FD0BBA7B221A165F002DF3CD /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0BBA7A221A165F002DF3CD /* TabBar.swift */; };
@@ -229,6 +232,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0268A96622240194005FF4F3 /* SnapKit.framework in Resources */,
 				0268A96422231DB5005FF4F3 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -237,6 +241,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0268A9672224019D005FF4F3 /* SnapKit.framework in Resources */,
+				0268A9652223FA7D005FF4F3 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

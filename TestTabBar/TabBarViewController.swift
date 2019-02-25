@@ -13,22 +13,6 @@ public class TabBarViewController: UIViewController {
     
     override public func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .white
-        
-        //tabBar.setContainer(container: self)
-        tabBar.setTabBarColor(color: .blue)
-        let position = tabBar.definePosition(position: Position.LEFT)
-        let buttons = tabBar.selectNumberOfButton(numberButton: 6)
-        tabBar.chooseSizeButton(buttons: buttons, position: position, sizeButtons: 0.1, 0.3, 0.2, 0.1, 0.2, 0.1)
-        
-        tabBar.addImageView(buttons: buttons, position: position, icone: "home", "profile", "info", "folder", "settings", "home")
-        
-        
-        //tabBar.addButtonToTabBar(buttons: buttons)
-        
-        
-        
-        //self.view.addSubview(tabBar)
     }
     
     override public func loadView() {

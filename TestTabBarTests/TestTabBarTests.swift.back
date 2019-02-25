@@ -16,10 +16,10 @@ class TestTabBarTests: XCTestCase {
     func testOrientation() {
         let portrait = XCUIDevice.shared.orientation.isPortrait
         XCTAssertEqual(portrait, tabBar.isLandscape())
-        XCUIDevice.shared.orientation = .landscapeLeft
+        self.waitUntilRotation(to: UIInterfaceOrientation.landscapeLeft)
         sleep(3)
         let landscape = XCUIDevice.shared.orientation.isLandscape
-        XCTAssertNotEqual(landscape, tabBar.isLandscape())
+        XCTAssertEqual(landscape, tabBar.isLandscape())
     }
     func testPosition() {
         let positions: [Position] = [Position.BOTTOM, Position.LEFT, Position.TOP, Position.RIGHT]
@@ -64,3 +64,13 @@ class TestTabBarTests: XCTestCase {
         XCTAssertLessThan(sizeTotalBtnTB, frameTB)
     }
 }
+
+public extension XCTestCase {
+    public func waitUntilRotation(to orientation: UIInterfaceOrientation) {
+        guard UIApplication.shared.statusBarOrientation != orientation else {
+            return
+        }
+        UIDevice.current.setValue(orientation.rawValue, forKey:"orientation")
+    }
+}
+
