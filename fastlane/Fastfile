@@ -44,7 +44,7 @@ platform :ios do
 
     pod_push(path: "TestTabBarLibrary.podspec", allow_warnings: true)
 
-  	#messageSlack(message: "Test release")
+  	messageSlack(message: "Test master succeed")
   end
 
   # Change destination backup file
