@@ -19,4 +19,4 @@ before_install:
   - carthage update --cache-builds
 before_script:
   - bumped release patch
-script: bundle exec fastlane build
+script: bundle exec fastlane build --repo-update
