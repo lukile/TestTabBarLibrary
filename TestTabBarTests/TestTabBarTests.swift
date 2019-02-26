@@ -35,9 +35,9 @@ class TestTabBarTests: XCTestCase {
         let bundle = Bundle.init(for: TestTabBarTests.self)
         let arrayImage: [String] = ["more", "search"]
         for image in arrayImage {
-             let image = UIImage(named: image, in: bundle, compatibleWith: nil)
+            let image = UIImage(named: image, in: bundle, compatibleWith: nil)
             guard  image != nil else {
-                print("didn't find \(String(describing: image)) image in assets")
+                print("didn't find the image in assets")
                 XCTAssert(false)
                 return
             }
@@ -45,32 +45,22 @@ class TestTabBarTests: XCTestCase {
         XCTAssert(true)
     }
     func testButtonTabBar() {
-        var buttons = tabBar.selectNumberOfButton(numberButton: 4)
-        if(buttons.count == 1) {
-            print("Error: number buttons must be above to 1")
-            XCTFail()
+        let buttons = tabBar.selectNumberOfButton(numberButton: 4)
+        if(buttons.count == 4) {
+          XCTAssert(true)
+        } else {
+            print("Error: number buttons must be equals to \(buttons.count)")
+            XCTAssert(false)
         }
-        let frameTB: CGFloat = tabBar.frame.size.width
-        var sizeButton: CGFloat = 100
-        var sizeTotalBtnTB: CGFloat = 0
-        for i in 0..<buttons.count {
-            buttons[i].frame.size.width = 100
-            sizeButton += buttons[i].frame.size.width
-            if(sizeButton < frameTB) {
-                sizeTotalBtnTB = sizeButton
-            }
-
-        }
-        XCTAssertLessThan(sizeTotalBtnTB, frameTB)
     }
 }
 
-public extension XCTestCase {
+/*public extension XCTestCase {
     public func waitUntilRotation(to orientation: UIInterfaceOrientation) {
         guard UIApplication.shared.statusBarOrientation != orientation else {
             return
         }
         UIDevice.current.setValue(orientation.rawValue, forKey:"orientation")
     }
-}
+}*/
 

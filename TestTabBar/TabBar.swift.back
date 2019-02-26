@@ -11,7 +11,7 @@ import SnapKit
 
 public class TabBar : UIView {
     
-    private var container: UIViewController?
+    //private var container: UIViewController?
     private var position: Position?
     private var bgColor: UIColor?
     private var colorPressed: UIColor?
@@ -23,13 +23,14 @@ public class TabBar : UIView {
     private var total = CGFloat()
     private var inputSearch: UITextField = UITextField()
     private var textInputSearch: String = ""
+    public var tab = [UIButton]()
     
     let screensizeWidth = UIScreen.main.bounds.width
     let screensizeHeight = UIScreen.main.bounds.height
     
     var buttonsColor: [UIButton] = [UIButton]()
     
-    override init(frame: CGRect) {
+    override public init(frame: CGRect) {
         super.init(frame: frame)
         setupViews()
     }
@@ -70,9 +71,9 @@ public class TabBar : UIView {
     }
     
     
-    public func setContainer(container: UIViewController) {
-        self.container = container
-    }
+    /*public func setContainer(container: UIViewController) {
+     self.container = container
+     }*/
     
     
     public func definePosition(position: Position) -> Position {
@@ -117,13 +118,13 @@ public class TabBar : UIView {
     private func setTableView(position: Position) {
         switch position {
         case .LEFT:
-            tableView = UITableView(frame: CGRect(x: 60, y: screensizeHeight - 315, width: 60, height: 300))
+            tableView = UITableView(frame: CGRect(x: 60, y: Int(screensizeHeight - 315), width: 60, height: buttonsExceedTabBar.count * 50))
         case .RIGHT:
-            tableView = UITableView(frame: CGRect(x: screensizeWidth - 120, y: screensizeHeight - 315, width: 60, height: 310))
+            tableView = UITableView(frame: CGRect(x: Int(screensizeWidth - 120), y: Int(screensizeHeight - 315), width: 60, height: buttonsExceedTabBar.count * 50))
         case .TOP:
-            tableView = UITableView(frame: CGRect(x: screensizeWidth - 60, y: 110, width: 60, height: 310))
+            tableView = UITableView(frame: CGRect(x: Int(screensizeWidth - 60), y: 110, width: 60, height: buttonsExceedTabBar.count * 50))
         case .BOTTOM:
-            tableView = UITableView(frame: CGRect(x: screensizeWidth - 60, y: screensizeHeight - 380, width: 60, height: 310))
+            tableView = UITableView(frame: CGRect(x: Int(screensizeWidth - 60), y: Int(screensizeHeight) - buttonsExceedTabBar.count * 50 - 60, width: 60, height: buttonsExceedTabBar.count * 50))
         }
         
         tableView.dataSource = self
@@ -162,7 +163,7 @@ public class TabBar : UIView {
                 
                 button.frame = CGRect(x: (previousButton?.frame.size.width ?? 0) + gap + previousFrameSize, y: 0, width: ceil(setButtonSizeWidth(buttonWidth: sizeButtons[count])), height: 50)
                 
-                total += ceil(setButtonSizeWidth(buttonWidth: sizeButtons[count]))
+                // total += ceil(setButtonSizeWidth(buttonWidth: sizeButtons[count]))
                 
                 gap = 0.1
                 count += 1
@@ -183,7 +184,7 @@ public class TabBar : UIView {
                 
                 button.frame = CGRect(x: 0, y: (previousButton?.frame.height ?? 30) + gap + previousFrameSize, width: 60, height: setButtonHeight(buttonHeight: sizeButtons[count]))
                 
-                total += ceil(setButtonHeight(buttonHeight: sizeButtons[count]))
+                //total += ceil(setButtonHeight(buttonHeight: sizeButtons[count]))
                 
                 gap = 0.1
                 count += 1
@@ -240,15 +241,23 @@ public class TabBar : UIView {
             var onlyTwoButton = true
             
             for button in buttons {
+                
+                if(icone[count] == "search") {
+                    button.addTarget(self, action: #selector(TabBar.buttonSearch(_:)), for: .touchUpInside)
+                }
+                
                 let previous = buttons.before(button)
                 
-                print("button width ", button.frame.width)
-                print("screensizeWidth ", screensizeWidth)
                 let image = UIImage(named: icone[count])
                 let imageView = UIImageView(image: image)
+                
+                let halfImageWidth = (image?.size.width)! / 2
+                let halfButtonWidth = button.frame.width / 2
+                
+                
                 imageView.image = image
                 
-                imageView.frame = CGRect(x: (previous?.frame.size.width ?? 0) + gap + previousFrame, y: 0, width: (image?.size.width)!, height: 50)
+                imageView.frame = CGRect(x: halfButtonWidth - halfImageWidth , y: 0, width: (image?.size.width)!, height: 50)
                 
                 gap += 0.1
                 count += 1
@@ -314,8 +323,6 @@ public class TabBar : UIView {
                 if(icone[count] == "search") {
                     button.addTarget(self, action: #selector(TabBar.buttonSearch(_:)), for: .touchUpInside)
                     
-                } else {
-                    print("nope")
                 }
                 
                 let image = UIImage(named: icone[count])
@@ -438,18 +445,16 @@ public class TabBar : UIView {
         
         print(sender.isSelected)
         if(!sender.isSelected){
-            UIView.beginAnimations("test", context: nil)
-            UIView.setAnimationTransition(.none, for: self, cache: false)
-            UIView.setAnimationDuration(0.1)
+            //UIView.beginAnimations("test", context: nil)
+            //UIView.setAnimationTransition(.none, for: self, cache: false)
+            //UIView.setAnimationDuration(0.1)
             btn.backgroundColor = self.colorPressed
             btn.subviews.forEach { img in
                 imageView = img as? UIImageView
                 imageView!.setImageColor(color: colorNotPressed!)
             }
-            UIView.commitAnimations()
-            print("NOT SELECTED")
+            //UIView.commitAnimations()
             btn.isSelected = true
-            print(buttonsColor.count)
             if(buttonsColor.count > 1 && buttonsColor.count <= 2){
                 let previousBtn = buttonsColor.first
                 previousBtn?.backgroundColor = colorNotPressed
@@ -472,8 +477,6 @@ public class TabBar : UIView {
                     buttonsColor.remove(at: i)
                 }
             }
-            
-            print("SELECTED")
         }
     }
 }
@@ -510,23 +513,6 @@ extension BidirectionalCollection where Iterator.Element: Equatable {
     }
 }
 
-extension UIColor {
-    convenience init(red: CGFloat, green: CGFloat, blue: CGFloat) {
-        assert(red >= 0 && red <= 255, "Invalid red component")
-        assert(green >= 0 && green <= 255, "Invalid green component")
-        assert(blue >= 0 && blue <= 255, "Invalid blue component")
-        
-        self.init(red: CGFloat(red) / 255.0, green: CGFloat(green) / 255.0, blue: CGFloat(blue) / 255.0, alpha: 1.0)
-    }
-    
-    convenience init(rgb: Int) {
-        self.init(
-            red: CGFloat((rgb >> 16) & 0xFF),
-            green: CGFloat((rgb >> 8) & 0xFF),
-            blue: CGFloat(rgb & 0xFF)
-        )
-    }
-}
 
 extension TabBar: UITableViewDelegate, UITableViewDataSource {
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -536,6 +522,7 @@ extension TabBar: UITableViewDelegate, UITableViewDataSource {
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         var cell = tableView.dequeueReusableCell(withIdentifier: "cell")
         let imageButton = imageButtonExceed[indexPath.row]
+        
         
         self.tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
         

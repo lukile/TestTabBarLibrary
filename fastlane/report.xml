@@ -5,117 +5,122 @@
     
     
       
-      <testcase classname="fastlane.lanes" name="00: opt_out_usage" time="0.001774">
+      <testcase classname="fastlane.lanes" name="00: default_platform" time="0.001621">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="01: default_platform" time="0.001089">
+      <testcase classname="fastlane.lanes" name="01: Switch to ios addCarthage lane" time="0.001275">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="02: Switch to ios addCarthage lane" time="0.00131">
+      <testcase classname="fastlane.lanes" name="02: carthage" time="50.173271">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="03: carthage" time="45.556194">
+      <testcase classname="fastlane.lanes" name="03: Switch to ios messageSlack lane" time="0.001454">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="04: Switch to ios messageSlack lane" time="0.001544">
+      <testcase classname="fastlane.lanes" name="04: slack" time="0.3725">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="05: slack" time="0.537832">
+      <testcase classname="fastlane.lanes" name="05: Switch to ios backupData lane" time="0.001415">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="06: Switch to ios backupData lane" time="0.001516">
+      <testcase classname="fastlane.lanes" name="06: backup_file" time="0.034782">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="07: backup_file" time="0.003695">
+      <testcase classname="fastlane.lanes" name="07: Switch to ios changePlaceFile lane" time="0.001786">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="08: Switch to ios changePlaceFile lane" time="0.001238">
+      <testcase classname="fastlane.lanes" name="08: backup_file" time="0.003282">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="09: backup_file" time="0.002024">
+      <testcase classname="fastlane.lanes" name="09: Switch to ios changePlaceFile lane" time="0.002143">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="10: Switch to ios changePlaceFile lane" time="0.001745">
+      <testcase classname="fastlane.lanes" name="10: backup_file" time="0.002052">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="11: backup_file" time="0.002987">
+      <testcase classname="fastlane.lanes" name="11: Switch to ios changePlaceFile lane" time="0.001331">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="12: Switch to ios changePlaceFile lane" time="0.00123">
+      <testcase classname="fastlane.lanes" name="12: Switch to ios messageSlack lane" time="0.001353">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="13: Switch to ios messageSlack lane" time="0.001468">
+      <testcase classname="fastlane.lanes" name="13: slack" time="0.380365">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="14: slack" time="0.481853">
+      <testcase classname="fastlane.lanes" name="14: Switch to ios devices lane" time="0.001605">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="15: Switch to ios devices lane" time="0.001586">
+      <testcase classname="fastlane.lanes" name="15: run_tests" time="26.686322">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="16: run_tests" time="43.021797">
+      <testcase classname="fastlane.lanes" name="16: Switch to ios messageSlack lane" time="0.001637">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="17: Switch to ios messageSlack lane" time="0.002441">
+      <testcase classname="fastlane.lanes" name="17: slack" time="0.357623">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="18: slack" time="0.53344">
+      <testcase classname="fastlane.lanes" name="18: version_bump_podspec" time="0.003137">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="19: version_bump_podspec" time="0.004435">
+      <testcase classname="fastlane.lanes" name="19: version_get_podspec" time="0.003009">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="20: version_get_podspec" time="0.002653">
+      <testcase classname="fastlane.lanes" name="20: set_github_release" time="18.02412">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="21: set_github_release" time="5.558152">
+      <testcase classname="fastlane.lanes" name="21: pod_push" time="100.348384">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="22: pod_push" time="98.513934">
+      <testcase classname="fastlane.lanes" name="22: Switch to ios messageSlack lane" time="0.012791">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="23: slack" time="0.543771">
         
       </testcase>
     
