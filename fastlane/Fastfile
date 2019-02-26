@@ -60,6 +60,7 @@ platform :ios do
     end
   end
 
+  # Runs carthage for your project
   lane :addCarthage do
     carthage(
       command: "update",
